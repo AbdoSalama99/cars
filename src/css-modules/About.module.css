@@ -1,0 +1,53 @@
+.about_container {
+  padding: 0 120px;
+}
+
+.about_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+.about_image img {
+  width: 350px;
+  /* background-color: aqua; */
+}
+
+.about_text p {
+  font-size: 18px;
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 1050px */
+/* ///////////////////////////////////////// */
+@media (max-width: 1050px) {
+  .about_container {
+    padding: 0 70px;
+  }
+  .about_content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 80px;
+  }
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 800px */
+/* ///////////////////////////////////////// */
+@media (max-width: 800px) {
+  .about_container {
+    padding: 0 50px;
+  }
+  .about_image {
+    display: none;
+  }
+
+  .about_text p {
+    font-size: 15px;
+  }
+}

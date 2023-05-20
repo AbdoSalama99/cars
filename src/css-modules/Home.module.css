@@ -1,0 +1,98 @@
+.home_container {
+  min-height: 100vh;
+  padding: 0 120px;
+  background-image: url(../imags/Background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.home_content {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 70vh;
+}
+
+.innerHome_container {
+  width: 40%;
+  text-align: right;
+  color: white;
+}
+
+.innerHome_container h2 {
+  font-size: 42px;
+  padding-left: 20%;
+}
+.innerHome_container p {
+  font-size: 21px;
+  font-weight: 600;
+  padding-left: 40%;
+  line-height: 1.6;
+}
+.innerHome_container button {
+  padding: 7px 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.innerHome_container button:hover {
+  background-color: #741906;
+  color: white;
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 1150px */
+/* ///////////////////////////////////////// */
+@media (max-width: 1150px) {
+  .home_container {
+    padding: 0 50px;
+  }
+
+  .home_content {
+    align-items: center;
+  }
+
+  .innerHome_container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .innerHome_container h2,
+  .innerHome_container p {
+    padding-left: 0%;
+  }
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 850px */
+/* ///////////////////////////////////////// */
+@media (max-width: 850px) {
+  .innerHome_container h2 {
+    font-size: 30px;
+  }
+
+  .innerHome_container p {
+    font-size: 17px;
+  }
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 600px */
+/* ///////////////////////////////////////// */
+@media (max-width: 600px) {
+  .home_container {
+    padding: 0 20px;
+  }
+
+  .home_content {
+    padding: 0;
+  }
+}

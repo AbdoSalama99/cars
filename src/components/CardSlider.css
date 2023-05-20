@@ -1,0 +1,77 @@
+.card-slider {
+  position: relative;
+  width: 97%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-slider-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px;
+  border: none;
+  background-color: #741906;
+  color: white;
+  cursor: pointer;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.slider-button:hover {
+  background-color: #460f04;
+}
+.slider-button-prev {
+  left: -50px;
+}
+
+.slider-button-next {
+  right: -50px;
+}
+.dotos {
+  display: flex;
+  position: absolute;
+  bottom: -30px;
+}
+
+.doto {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #e5e5e5;
+  cursor: pointer;
+  border: none;
+  margin: 5px;
+}
+.active {
+  background-color: #741906;
+}
+
+/* /////////////////////////////////////////
+/* handle the styling on the screen under 860px */
+/* ///////////////////////////////////////// */
+@media (max-width: 860px) {
+  .slider-button {
+    display: none;
+  }
+
+  .card-slider-content {
+    gap: 0;
+    margin-bottom: 20px;
+  }
+}

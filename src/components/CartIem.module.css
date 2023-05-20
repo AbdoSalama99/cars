@@ -1,0 +1,9 @@
+.item_container {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}

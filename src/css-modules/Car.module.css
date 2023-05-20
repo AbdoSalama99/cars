@@ -1,0 +1,110 @@
+.cars_container {
+  padding: 0 120px;
+  background-color: #fafafa;
+  min-height: 100vh;
+  z-index: 0;
+}
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 1200px */
+/* ///////////////////////////////////////// */
+@media (max-width: 1200px) {
+  .cars_container {
+    padding: 0 20px;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+
+.min_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 100px;
+}
+
+.img_container {
+  position: relative;
+}
+
+.img_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  text-align: center;
+}
+
+.text h3 {
+  font-size: 26px;
+}
+.text .contactLink {
+  text-decoration: none;
+  color: white;
+  padding: 7px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.text .contactLink:hover {
+  background-color: #741906;
+  color: white;
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 860px */
+/* ///////////////////////////////////////// */
+@media (max-width: 860px) {
+  .min_container {
+    grid-template-columns: 1fr;
+  }
+  .not_centered {
+    display: none;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+
+.Testimonials {
+  background-color: #12273d;
+  padding: 60px 120px;
+  position: relative;
+}
+.img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 860px */
+/* ///////////////////////////////////////// */
+@media (max-width: 860px) {
+  .Testimonials {
+    background-color: #12273d;
+    padding: 10px;
+    position: relative;
+  }
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 600px */
+/* ///////////////////////////////////////// */
+@media (max-width: 860px) {
+  .img {
+    display: none;
+  }
+}

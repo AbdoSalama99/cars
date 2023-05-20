@@ -1,0 +1,35 @@
+.pageTitle {
+  margin-bottom: 50px;
+}
+
+.pageTitle h2 {
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.pageTitle span {
+  margin-top: -50px;
+  margin-left: 25px;
+  display: block;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 850px */
+/* ///////////////////////////////////////// */
+@media (max-width: 850px) {
+  .pageTitle {
+    margin-bottom: 10px;
+  }
+
+  .pageTitle h2 {
+    font-size: 30px;
+  }
+
+  .pageTitle span {
+    font-size: 30px;
+    margin-top: -20px;
+  }
+}

@@ -1,0 +1,65 @@
+.services_container {
+  min-height: 100vh;
+  padding: 0 120px;
+  background-image: url(../imags/CTA\ BG.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* to make an overlay with this color (#dfdfdf)  */
+.services_container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #dfdfdf;
+  z-index: -1;
+}
+
+.services_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.services_content div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services_content div p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 1000px */
+/* ///////////////////////////////////////// */
+@media (max-width: 1000px) {
+  .services_content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 750px */
+/* ///////////////////////////////////////// */
+@media (max-width: 750px) {
+  .services_container {
+    padding: 0 40px;
+  }
+  .services_content {
+    gap: 35px;
+  }
+  .services_content div p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}

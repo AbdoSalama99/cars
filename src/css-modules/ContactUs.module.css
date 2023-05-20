@@ -1,0 +1,168 @@
+.contact_container {
+  padding: 0 120px;
+}
+
+.conatact_content {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr auto;
+}
+.contactBrands {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 0px 50px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 40px;
+  padding: 20px 55px;
+}
+
+.footer_info {
+  padding: 20px;
+}
+
+.footer_info h3 {
+  color: #741906;
+}
+.footer_info p {
+  color: #12273d;
+  margin-right: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.footer_subscripe {
+  padding: 20px;
+}
+
+.footer_subscripe h3 {
+  color: #741906;
+}
+
+.footer_subscripe p {
+  color: #12273d;
+  margin: 40px 20px 40px 0px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.footer_subscripe form input {
+  padding: 10px;
+  margin-right: 5px;
+  color: #12273d;
+}
+.footer_subscripe form input:focus {
+  outline: none;
+}
+
+.footer_subscripe form button {
+  padding: 10px;
+  background-color: #741906;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.footer_subscripe form button:hover {
+  background-color: #460f04;
+}
+
+.contactInfo {
+  padding: 20px;
+}
+
+.contactInfo h3 {
+  color: #741906;
+}
+
+.contactInfo div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.phones {
+  display: flex;
+  flex-direction: column;
+  gap: 4px !important;
+}
+.phones p {
+  margin: 0;
+  padding: 0;
+}
+
+.icons_copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.conatact_content .socail_icons {
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.conatact_content .socail_icons .socail_icon {
+  padding: 5px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  color: #12273d;
+}
+.conatact_content .socail_icons .socail_icon:hover {
+  background-color: #741906;
+  color: white;
+}
+
+.copyright {
+  width: 80%;
+  text-align: center;
+  border-top: 4px solid #741906;
+  padding-top: 10px;
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 1250px */
+/* ///////////////////////////////////////// */
+@media (max-width: 1250px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 1050px */
+/* ///////////////////////////////////////// */
+@media (max-width: 1250px) {
+  .contact_container {
+    padding: 0 40px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 860px */
+/* ///////////////////////////////////////// */
+@media (max-width: 860px) {
+  .contact_container {
+    padding: 0 10px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 0px;
+  }
+  .contactBrands {
+    margin: 0;
+  }
+}

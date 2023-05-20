@@ -1,0 +1,124 @@
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_container .link,
+.nav_container .main_link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.nav_container .link:hover {
+  background-color: #741906;
+  color: white !important;
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav_list .barsIcon {
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  display: none;
+  margin-left: 7px;
+}
+
+.nav_list li .active {
+  background-color: #741906;
+  color: white !important;
+}
+
+.Cartbtn {
+  position: relative;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.cartIcon {
+  margin-right: -2px;
+}
+.Cartbtn span {
+  background-color: #f8d7a4;
+  padding: 1px 5px;
+  border-radius: 3px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  color: black;
+}
+
+.nav_list.open {
+  display: flex;
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 1150px */
+/* ///////////////////////////////////////// */
+@media (max-width: 1150px) {
+  .nav_list {
+    gap: 5px;
+  }
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 850px */
+/* ///////////////////////////////////////// */
+@media (max-width: 850px) {
+  .nav_container .main_link {
+    font-size: 17px;
+  }
+
+  .nav_list .barsIcon {
+    display: inline-block;
+  }
+
+  ul.nav_list {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    background-color: rgba(0, 0, 0, 0.726);
+    /* top is the height of navbar */
+    top: 115px;
+    left: 50%;
+    right: 0;
+    bottom: -5px;
+    z-index: 111;
+  }
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 600px */
+/* ///////////////////////////////////////// */
+@media (max-width: 600px) {
+  .nav_container .main_link {
+    font-size: 13px;
+  }
+
+  ul.nav_list {
+    top: 70px;
+  }
+
+  .nav_container .link {
+    color: white !important;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////// */

@@ -1,0 +1,78 @@
+.card_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 330px;
+  height: 500px;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.card_container h2 {
+  color: #19100e;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.name {
+  margin: 0;
+  font-size: 16px;
+}
+
+.description {
+  margin: 10px 0px 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.card_controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  /* background-color: rebeccapurple; */
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logos span {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 5px;
+  width: 100px;
+}
+.controlKeys button {
+  background-color: #741906;
+  color: white;
+  border: none;
+  margin: 8px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.controlKeys button:hover {
+  background-color: #460f04;
+}
+
+/* ///////////////////////////////////////// */
+/* handle the styling on the screen under 860px */
+/* ///////////////////////////////////////// */
+@media (max-width: 860px) {
+  .card_container {
+    padding: 10px 40px;
+    margin: 0px;
+  }
+  .card_controls {
+    gap: 30px;
+  }
+}
