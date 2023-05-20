@@ -13,7 +13,6 @@ const Card = (props) => {
 
   function decreaseAmountHandler() {
     cartCtx.removeItem(props.data);
-    console.log("remove");
   }
 
   return (
